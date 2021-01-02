@@ -45,6 +45,7 @@ class Controller extends BaseController
 
         $provider = $this->getProvider($data["fqdn"]);
         $provider->present($data["fqdn"], $data["value"]);
+        echo $data["value"];
     }
 
     public function cleanup(Request $request)
@@ -52,5 +53,6 @@ class Controller extends BaseController
         $data = $this->check($request);
         $provider = $this->getProvider($data["fqdn"]);
         $provider->cleanUp($data["fqdn"], $data["value"]);
+        echo $data["value"];
     }
 }
