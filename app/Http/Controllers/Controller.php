@@ -45,7 +45,7 @@ class Controller extends BaseController
 
         $provider = $this->getProvider($data["fqdn"]);
         $provider->present($data["fqdn"], $data["value"]);
-        echo $data["value"];
+        echo $this->getResponse($data["fqdn"], $data["value"]);
     }
 
     public function cleanup(Request $request)
@@ -53,6 +53,15 @@ class Controller extends BaseController
         $data = $this->check($request);
         $provider = $this->getProvider($data["fqdn"]);
         $provider->cleanUp($data["fqdn"], $data["value"]);
-        echo $data["value"];
+        echo $this->getResponse($data["fqdn"], $data["value"]);
+    }
+
+    protected function getResponse(string $fqdn, string $txt)
+    {
+        // Send back the original JSON to confirm success
+        return json_encode([
+            "fqdn" => $fqdn,
+            "value" => $txt,
+        ]);
     }
 }
