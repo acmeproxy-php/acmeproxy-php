@@ -4,67 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0392b8f62134efdb37579e3c615c77a2",
+    "content-hash": "878011a4105a57092a7cb2e27be5f7f1",
     "packages": [
-        {
-            "name": "acmeproxy-php/acmeproxy-php-common",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/acmeproxy-php/acmeproxy-php-common.git",
-                "reference": "f48692af057cb37aff933aa5924d3a3de0ef54e1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/acmeproxy-php/acmeproxy-php-common/zipball/f48692af057cb37aff933aa5924d3a3de0ef54e1",
-                "reference": "f48692af057cb37aff933aa5924d3a3de0ef54e1",
-                "shasum": ""
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "acme\\common\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "support": {
-                "issues": "https://github.com/acmeproxy-php/acmeproxy-php-common/issues",
-                "source": "https://github.com/acmeproxy-php/acmeproxy-php-common/tree/0.1"
-            },
-            "time": "2020-12-20T09:48:16+00:00"
-        },
-        {
-            "name": "acmeproxy-php/acmeproxy-php-hostingde",
-            "version": "0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/acmeproxy-php/acmeproxy-php-hostingde.git",
-                "reference": "7d9e10e95453b7df320fb8e137a33b1b890a7f7e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/acmeproxy-php/acmeproxy-php-hostingde/zipball/7d9e10e95453b7df320fb8e137a33b1b890a7f7e",
-                "reference": "7d9e10e95453b7df320fb8e137a33b1b890a7f7e",
-                "shasum": ""
-            },
-            "require": {
-                "acmeproxy-php/acmeproxy-php-common": "9999999-dev",
-                "hostingde/api-php": "9999999-dev"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "acme\\hostingde\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "support": {
-                "issues": "https://github.com/acmeproxy-php/acmeproxy-php-hostingde/issues",
-                "source": "https://github.com/acmeproxy-php/acmeproxy-php-hostingde/tree/0.1"
-            },
-            "time": "2020-12-20T09:57:43+00:00"
-        },
         {
             "name": "brick/math",
             "version": "0.9.1",
@@ -490,49 +431,6 @@
                 }
             ],
             "time": "2020-04-13T13:17:36+00:00"
-        },
-        {
-            "name": "hostingde/api-php",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/hosting-de-labs/hostingde-api-php.git",
-                "reference": "54a679e0b9b0a1c81537e3f6fec6ceb5b130e886"
-            },
-            "require": {
-                "php": ">=7.0"
-            },
-            "default-branch": true,
-            "type": "project",
-            "autoload": {
-                "psr-0": {
-                    "Hostingde\\API": "src/"
-                }
-            },
-            "license": [
-                "BSD 2-Clause Simplified License"
-            ],
-            "authors": [
-                {
-                    "name": "hosting.de Dev Team",
-                    "email": "info@hosting.de",
-                    "homepage": "https://www.hosting.de/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "PHP API for hosting.de",
-            "homepage": "https://www.hosting.de/",
-            "keywords": [
-                "API",
-                "hosting.de"
-            ],
-            "support": {
-                "docs": "https://github.com/hosting-de-labs/hostingde-api-php",
-                "email": "support@hosting.de",
-                "issues": "https://github.com/hosting-de-labs/hostingde-api-php/issues",
-                "source": "https://github.com/hosting-de-labs/hostingde-api-php"
-            },
-            "time": "2020-10-26T12:26:22+00:00"
         },
         {
             "name": "illuminate/auth",

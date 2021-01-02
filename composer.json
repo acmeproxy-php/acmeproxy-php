@@ -10,7 +10,6 @@
     "type": "project",
     "require": {
         "php": "^7.3|^8.0",
-        "acmeproxy-php/acmeproxy-php-hostingde": "^0.1.0",
         "laravel/lumen-framework": "^8.0"
     },
     "require-dev": {
@@ -42,11 +41,5 @@
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
             "@php -r \"file_exists('./config/acme-example.php') || copy('./config/acme-example.php', './config/acme.php');\""
         ]
-    },
-    "repositories": [
-        {
-            "url": "https://github.com/hosting-de-labs/hostingde-api-php.git",
-            "type": "git"
-        }
-    ]
+    }
 }
