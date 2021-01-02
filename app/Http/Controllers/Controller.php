@@ -27,7 +27,7 @@ class Controller extends BaseController
         $config = config("acme");
 
         $splitDomain = explode(".", $fqdn);
-        $domain = implode(".", array_slice($splitDomain, -2, 2));
+        $domain = implode(".", array_slice($splitDomain, -3, 2));
 
         if (!isset($config["domains"][$domain])) {
             throw new Exception("Domain " . $domain . " not found in acme config");
